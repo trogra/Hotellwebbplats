@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hotell</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+    function book(){
+      alert("Tack, du har nu bokat! Du kommer att stanna i rum 234");
+    }
+    </script>
+  </head>
+    <body>
+      <div class="navigering">
+        <a href="index.html">Start</a>
+        <a class="active"href="boka.html">Boka</a>
+        <a href="https:maps.google.com" target="_blank">Hitta</a>
+        <a href="mailto:huttel@gmail.com">Kontakta</a>
+     </div>
+   </br>
+
+     <div align="left">
+
+     <form>
+       <label for="fnamn">Förnamn:</label></br>
+       <input type="text" id="fnamn" name="fnamn"></br>
+       <label for="enamn">Efternamn:</label></br>
+       <input type="text" id="enamn" name="enamn"></br></br>
+       <label for="age">Är du över 18</label></br>
+       <input type="checkbox" id="age" name="Ålder"></br>
+       <label for="gender">Kön:</label></br>
+
+       <input type="radio" id="male" name="gender" value="male">
+       <label for="male">Man</label></br>
+       <input type="radio" id="female" name="gender" value="female">
+       <label for="female">Kvinna</label></br>
+       <input type="radio" id="other" name="gender" value="annat">
+       <label for="other">Annat</label></br></br>
+       <button onclick="book();">Skicka bokning</button>
+
+    </form>
+  </div>
+
+    </body>
+</html>
